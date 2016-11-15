@@ -58,7 +58,7 @@ module.exports = (config, flags, args) => {
 
     packageJson.dependencies = Object.assign(
       packageJson.dependencies || {},
-      tempPackageJSON.dependencies
+      tempPackageJSON.dependencies,
     );
     logger.task('Added new dependencies to package.json');
     return packageJson;

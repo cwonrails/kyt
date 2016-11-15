@@ -12,7 +12,7 @@ module.exports = (rootDir, aliases = {}) => ({
       '^[./a-zA-Z0-9$_-]+\\.(css|scss)$':
           resolveFromUtils('style.stub'),
     },
-    aliases
+    aliases,
   ),
   scriptPreprocessor: resolveFromUtils('preprocessor'),
   testPathIgnorePatterns: ['<rootDir>/(build|docs|node_modules|images)/'],
